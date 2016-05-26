@@ -62,7 +62,7 @@ downloaded to /var/www
 * __ZEND\_DEBUG__ (bool) - set to true to start Zend Server in debug mode with maximum
   log verbosity
 * __ZEND\_SCRIPT\_URL__ (string) - URL from which custom script must be
-  downloaded and executed. Custom script is run after deployment.
+  downloaded and executed. Custom script is run after deployment. In order for script to be downloaded from secure bucket AWS_ACCESS_KEY and AWS_SECRET_KEY must be specified. S3 URL example would be s3://bucket_name/script_name
 * __ZEND\_SCRIPT\_PATH__ (string) - Absolute path to where custom script must be
   placed. If path is a directory, then script is saved in that directory with
   filename extracted from URL. After reboot this file will be overwritten by
